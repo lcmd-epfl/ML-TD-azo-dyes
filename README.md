@@ -1,4 +1,4 @@
-# ML-TD-azo-dyes
+# azo-xcite-tools
 
 This code supports the paper
 > Sergi Vela, Alberto Fabrizio, Ksenia R. Briling, and Clémence Corminboeuf,<br>
