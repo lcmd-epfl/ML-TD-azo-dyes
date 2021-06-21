@@ -3,10 +3,13 @@
 This code supports the paper
 > Sergi Vela, Alberto Fabrizio, Ksenia R. Briling, and Clémence Corminboeuf,<br>
 > “Machine-Learning the Transition Density of the Productive Excited States of Azo-dyes”<br>
-> [`ChemRxiv:XXXXXX`](https://chemrxiv.org/xxxxxx)<br>
+> [`JPCL:Accepted`]( https://doi.org/10.1021/acs.jpclett.1c01425)<br>
 
 It consists of two parts: the scripts to run *ab initio* computations
 and the scripts to compute the excited states descriptors.
+
+The tensorial kernels were computed using the [SOAPfast](https://github.com/dilkins/TENSOAP) routines
+and the regression weights were obtained using an in-house optimized version of the [ML framework](https://github.com/andreagrisafi/SALTED).
 
 ## Contents
 
