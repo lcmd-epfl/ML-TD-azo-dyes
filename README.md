@@ -3,7 +3,7 @@
 This code supports the paper
 > Sergi Vela, Alberto Fabrizio, Ksenia R. Briling, and Clémence Corminboeuf,<br>
 > “Machine-Learning the Transition Density of the Productive Excited States of Azo-dyes”<br>
-> [`JPCL:Accepted`]( https://doi.org/10.1021/acs.jpclett.1c01425)<br>
+> [`Vela, S.; Fabrizio, A.; Briling, K. R.; Corminboeuf, C. J. Phys. Chem. Lett. 2021, 5957–5962.`]( https://doi.org/10.1021/acs.jpclett.1c01425)<br>
 
 It consists of two parts: the scripts to run *ab initio* computations
 and the scripts to compute the excited states descriptors.
