@@ -1,5 +1,7 @@
 # azo-xcite-tools
 
+[![DOI](https://img.shields.io/badge/DOI-10.1021%2Facs.jpclett.1c01425-blue)](https://doi.org/10.1021/acs.jpclett.1c01425)
+
 This code supports the paper
 > Sergi Vela, Alberto Fabrizio, Ksenia R. Briling, and Clémence Corminboeuf,<br>
 > “Machine-Learning the Transition Density of the Productive Excited States of Azo-dyes”<br>
