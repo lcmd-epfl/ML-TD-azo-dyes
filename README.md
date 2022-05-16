@@ -194,7 +194,7 @@ $ code/fragments.py <molecule>.xyz <fragment_definition> <hole_coefficients> <pa
 
 Example:
 ```
-$ code/fragments.py C1-13-2-3.{xyz,frag} C1-13-2-3.xyz.st2_dm_{hole,part}_fit.dat
+$ code/fragments.py examples/C1-13-2-3.{xyz,frag} examples/C1-13-2-3.xyz.st2_dm_{hole,part}_fit.dat
 
 C1-13-2-3.xyz H [ 4.243 25.179  7.802 32.888 29.888] P [ 1.867 20.024 37.237 36.807  4.066]
 ```
