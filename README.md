@@ -1,12 +1,17 @@
 # azo-xcite-tools
 
+[![DOI](https://img.shields.io/badge/DOI-10.1021%2Facs.jpclett.1c01425-blue)](https://doi.org/10.1021/acs.jpclett.1c01425)
+
 This code supports the paper
 > Sergi Vela, Alberto Fabrizio, Ksenia R. Briling, and Clémence Corminboeuf,<br>
 > “Machine-Learning the Transition Density of the Productive Excited States of Azo-dyes”<br>
-> [`ChemRxiv:XXXXXX`](https://chemrxiv.org/xxxxxx)<br>
+> [`J. Phys. Chem. Lett. 2021, 5957–5962.`]( https://doi.org/10.1021/acs.jpclett.1c01425)<br>
 
 It consists of two parts: the scripts to run *ab initio* computations
 and the scripts to compute the excited states descriptors.
+
+The tensorial kernels were computed using the [SOAPfast](https://github.com/dilkins/TENSOAP) routines
+and the regression weights were obtained using an in-house optimized version of the [ML framework](https://github.com/andreagrisafi/SALTED).
 
 ## Contents
 
@@ -189,7 +194,7 @@ $ code/fragments.py <molecule>.xyz <fragment_definition> <hole_coefficients> <pa
 
 Example:
 ```
-$ code/fragments.py C1-13-2-3.{xyz,frag} C1-13-2-3.xyz.st2_dm_{hole,part}_fit.dat
+$ code/fragments.py examples/C1-13-2-3.{xyz,frag} examples/C1-13-2-3.xyz.st2_dm_{hole,part}_fit.dat
 
 C1-13-2-3.xyz H [ 4.243 25.179  7.802 32.888 29.888] P [ 1.867 20.024 37.237 36.807  4.066]
 ```
