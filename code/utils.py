@@ -73,9 +73,9 @@ def r_c(rho, mol):
 
 
 def r2_c(rho, mol):
-  N  = 0.0           # <1>
-  r  = np.zeros(3)   # <r>
-  r2 = 0.0           # <r^2>
+  N  = 0.0              # <1>
+  r  = numpy.zeros(3)   # <r>
+  r2 = 0.0              # <r^2>
   i=0
   for iat in range(mol.natm):
     q = mol._atom[iat][0]
@@ -83,15 +83,15 @@ def r2_c(rho, mol):
     for gto in mol._basis[q]:
       l, [a, c] = gto
       if(l==0):
-        I0 = c * (2.0*np.pi/a)**0.75
-        I2 = c * 3.0 * (np.pi**0.75) / (a**1.75 * 2.0**0.25)
+        I0 = c * (2.0*numpy.pi/a)**0.75
+        I2 = c * 3.0 * (numpy.pi**0.75) / (a**1.75 * 2.0**0.25)
         N   += I0 * rho[i]
         r   += I0 * rho[i] * coord
         r2  += I0 * rho[i] * (coord@coord)
         r2  += I2 * rho[i]
         i+=1
       elif(l==1):
-        I1 = c * (2.0*np.pi)**0.75 / (a**1.25)
+        I1 = c * (2.0*numpy.pi)**0.75 / (a**1.25)
         temp = I1 * rho[i:i+3]
         r   += temp
         r2  += 2.0*(temp@coord)
