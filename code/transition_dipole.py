@@ -2,12 +2,16 @@
 
 import sys
 import numpy as np
-from utils import readmol,r_c
+import qstack
 import qm_config
 
-xyzfile = sys.argv[1]
-c       = np.loadtxt(sys.argv[2])
-mol     = readmol(xyzfile, qm_config.basis2)
-el_dip  = r_c(c, mol)
-with np.printoptions(formatter={'float': '{: .5f}'.format}):
-  print(xyzfile, el_dip)
+def main():
+    xyzfile = sys.argv[1]
+    c       = np.loadtxt(sys.argv[2])
+    mol     = qstack.compound.xyz_to_mol(xyzfile, qm_config.basis2)
+    el_dip  = qstack.fields.moments.first(mol, c)
+    with np.printoptions(formatter={'float': '{: .5f}'.format}):
+        print(xyzfile, el_dip)
+
+if __name__ == "__main__":
+  main()
